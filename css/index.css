@@ -37,6 +37,13 @@ a[href] {
 a[href]:visited {
   color: var(--navy);
 }
+dt {
+  font-style: italic;
+  font-weight: 800;
+}
+dd {
+  margin-bottom: 1em;
+}
 main {
   padding: 1rem;
 }
