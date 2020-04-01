@@ -8,6 +8,31 @@
   --blue: #082840;
   --white: #fff;
 }
+
+@font-face {
+    font-family: 'd-din-bold';
+    src: url('d-din-bold-webfont.woff2') format('woff2'),
+         url('d-din-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'd-din-italic';
+    src: url('d-din-italic-webfont.woff2') format('woff2'),
+         url('d-din-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'd-din';
+    src: url('d-din-webfont.woff2') format('woff2'),
+         url('d-din-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,10 +40,15 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'd-din', sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
 }
+
+h1,h2,h3 {
+  font-family: 'd-din-bold', sans-serif;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -230,4 +260,32 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+@media (min-width: 768px){
+
+header, main, footer {
+  max-width: 724px;
+  margin: 0 auto;
+}
+
+}
+
+@media (min-width: 1024px){
+
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.postlist-item {
+  width: 280px;
+  display: inline-block;
+  margin-right: 20px;
+}
+}
+
+@media (min-width: 1200px){
+
+...
+
 }
