@@ -4,16 +4,32 @@ tags:
 navtitle: Home
 ---
 
-<h1>Wassergekühlt</h1>
-<h2>Home of the Porsche 996</h2>
-<p>
-Porsche's iconic rear-engined sports car debuted in 1963, but it was reborn in 1998 with the introduction of the '996' model. The 996 was the first all-new chassis design since the 911's debut, and features the first water cooled engine for the 911, a feature that Germans refer to as <em>wassergekühlt</em>.
-</p>
-<p>With the oldest of these sports cars passing the 20 year mark, they are transitioning from mere used cars to bona fide classics. This site aims to gather together all the information needed mainain, cherish, and enjoy the Porsche 996.</p>
+<section id="home-hero">
+<div class="row">
+	<h1>The unique face  of an automotive legend reborn</h1>
+	<h2>The Porsche 996</h2>
+</div>
+</section>
 
+<section class="pattern-background">
+<div class="row">
+	<h2>Wassergekühlt: Home of the Porsche 996</h2>
+	<p>
+	Porsche's iconic rear-engined sports car debuted in 1963, but it was reborn in 1998 with the introduction of the '996' model. The 996 was the first all-new chassis design since the 911's debut, and features the first water cooled engine for the 911, a feature that Germans refer to as <em>wassergekühlt</em>.
+	</p>
+	<p>
+	With the oldest of these sports cars passing the 20 year mark, they are transitioning from mere used cars to bona fide classics. This site aims to gather together all the information needed mainain, cherish, and enjoy the Porsche 996.
+	</p>
+</div>
+</section>
+
+<section>
+<div class="row">
 <h3>Recent Articles</h3>
 
 {% set postslist = collections.posts | head(-3) %}
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+</div>
+</section>

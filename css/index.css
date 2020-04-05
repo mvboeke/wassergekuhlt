@@ -3,10 +3,12 @@
   --darkred: #7F0036;
   --lightgray: #e0e0e0;
   --gray: #C0C0C0;
-  --darkgray: #333;
+  --darkgray: #2f2e2e;
   --navy: #17050F;
   --blue: #082840;
   --white: #fff;
+  --transparentwhite: rgba(255, 255, 255, .9);
+  --transparentgray: rgba(0, 0, 0, .5);
 }
 
 @font-face {
@@ -52,7 +54,7 @@ h1,h2,h3 {
 p:last-child {
   margin-bottom: 0;
 }
-p,
+.tmpl-post p,
 .tmpl-post li,
 img {
   max-width: 37.5em; /* 600px /16 */
@@ -68,14 +70,16 @@ a[href]:visited {
   color: var(--navy);
 }
 dt {
-  font-style: italic;
-  font-weight: 800;
+  padding: 0 0 .286em 0;
+  font-family: 'd-din-bold', sans-serif;
+  font-size: 1.313em;
 }
 dd {
-  margin-bottom: 1em;
+  margin: 0;
+  padding: 0 0 1.5em 0;
 }
 main {
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 main :first-child {
   margin-top: 0;
@@ -262,18 +266,84 @@ a[href].direct-link:focus:visited,
   color: #aaa;
 }
 
+/* Home page styles */
+#home-hero {
+  background-image: url(/img/bw_mk2_cropped.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--white);
+  min-height: 28em;
+}
+
+#home-hero h1 {
+  font-size: 3em;
+  border-bottom: 1px solid var(--red);
+  text-shadow: 0px 2px 2px var(--transparentgray);
+}
+
+.pattern-background {
+  background-image: url(/img/piston_pattern.png);
+  padding: 2em;
+}
+
+.pattern-background div {
+  background-color: var(--white);
+  padding: 2em;
+  max-width: 37.5em;
+}
+
+/* Glossary page styles */
+#glossary {
+  background-image: url(/img/C2_gravel_road.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#glossary h1 {
+  padding: .5em;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 0px 2px 2px var(--transparentgray);
+  font-size: 5em;
+  margin: 0;
+}
+
+.transparent-box {
+  background-color: var(--transparentwhite);
+  padding: 2em;
+  max-width: 620px;
+  margin: auto;
+}
+
+.transparent-box h2 {
+  display: table;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: .25em;
+}
+
+/* Responsive styles */
 @media (min-width: 768px){
 
-header, main, footer {
+.row {
   max-width: 724px;
   margin: 0 auto;
+}
+
+#home-hero {
+  padding-top: 6em;
+  padding-right: 1em;  
+  padding-bottom: 6em;
+  padding-left: 65%;
 }
 
 }
 
 @media (min-width: 1024px){
 
-header, main, footer {
+.row {
   max-width: 960px;
   margin: 0 auto;
 }
