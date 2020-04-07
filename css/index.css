@@ -271,15 +271,23 @@ a[href].direct-link:focus:visited,
   background-image: url(/img/bw_mk2_cropped.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  text-align: center;
   color: var(--white);
-  min-height: 28em;
+  
 }
 
 #home-hero h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   border-bottom: 1px solid var(--red);
   text-shadow: 0px 2px 2px var(--transparentgray);
+  padding: .5em .2em .5em .2em;
+  margin-bottom: 0;
+}
+
+#home-hero h2 {
+  margin: 0;
+  padding: .5em .5em;
+  font-family: 'd-din', sans-serif;
 }
 
 .pattern-background {
@@ -296,18 +304,17 @@ a[href].direct-link:focus:visited,
 /* Glossary page styles */
 #glossary {
   background-image: url(/img/C2_gravel_road.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: contain;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
 #glossary h1 {
-  padding: .5em;
+  padding: .4em 0 3em 0;
   text-align: center;
   color: var(--white);
   text-shadow: 0px 2px 2px var(--transparentgray);
-  font-size: 5em;
+  font-size: 3em;
   margin: 0;
 }
 
@@ -333,10 +340,33 @@ a[href].direct-link:focus:visited,
 }
 
 #home-hero {
-  padding-top: 6em;
+  padding-top: 20vh;
   padding-right: 1em;  
-  padding-bottom: 6em;
+  padding-bottom: 15vh;
   padding-left: 65%;
+  background-attachment: fixed;
+  min-height: 85vh;
+  text-align: left;
+}
+
+#home-hero h1 {
+  padding: 0 0 .5em 0;
+  font-size: 3em;
+}
+
+#home-hero h2 {
+  padding: 1em 0 .5em 0;
+}
+
+#glossary {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#glossary h1 {
+  padding: .5em;
+  font-size: 5em;
 }
 
 }
