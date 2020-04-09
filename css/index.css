@@ -64,10 +64,10 @@ p,
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
+  color: var(--darkred);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--darkred);
 }
 dt {
   padding: 0 0 .286em 0;
@@ -91,6 +91,9 @@ header:after {
   content: "";
   display: table;
   clear: both;
+}
+header a[href], header a[href]:visited {
+  color: var(--darkgray)
 }
 table {
   margin: 1em 0;
@@ -331,6 +334,43 @@ a[href].direct-link:focus:visited,
   padding-bottom: .25em;
 }
 
+/*Resources page styles*/
+#resources {
+  background-image: url(/img/silver_C4S_on_brick.jpg);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#resources h1 {
+  padding: .4em 0 3em 0;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 0px 2px 2px var(--transparentgray);
+  font-size: 3em;
+  margin: 0;
+}
+
+#resources h3 {
+  padding: .5em 0 .5em 0;
+  margin: 0;
+}
+
+#resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#resources ul li {
+  padding: 0 0 .5em 0;
+}
+
+#resources ul li a {
+  font-family: 'd-din-bold', sans-serif;
+  display: block;
+}
+
+
 /* Responsive styles */
 @media (min-width: 768px){
 
@@ -351,20 +391,20 @@ a[href].direct-link:focus:visited,
 
 #home-hero h1 {
   padding: 0 0 .5em 0;
-  font-size: 3em;
+  font-size: 3em; 
 }
 
 #home-hero h2 {
   padding: 1em 0 .5em 0;
 }
 
-#glossary {
+#glossary, #resources {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 
-#glossary h1 {
+#glossary h1, #resources h1 {
   padding: .5em;
   font-size: 5em;
 }
