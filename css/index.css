@@ -388,11 +388,22 @@ a[href].direct-link:focus:visited,
 }
 
 /* Guide page styles */
+#guides h1 {
+  margin: 0;
+  padding: .4em 0 0 0;
+  font-size: 3em;
+  text-align: center;
+}
+
+#guides h2 {
+  text-align: center;
+  border-bottom: 1px solid var(--red);
+  display: table;
+  margin: auto;
+}
+
 .guide-box {
   position: relative;
- /* 
-  max-width: 600px;
-  width: 90%;*/
   height: 400px;
   background: #fff;
   box-shadow: 0 0 15px rgba(0,0,0,.1);
@@ -400,11 +411,24 @@ a[href].direct-link:focus:visited,
   background-position: center;
 }
 
-.guide-box .description {
-  position: absolute;
-  background-color: var(--blue);
+.guide-box h3 {
+  padding: .5em 1em;
   color: var(--white);
+  text-shadow: 0px 2px 2px var(--transparentgray);
+  font-size: 2em;
+}
+
+.guide-box h3.dark {
+  color: var(--darkgray);
+}
+
+.guide-box .description {
   bottom: 0px;
+  width: 100%;
+  position: absolute;
+  padding: 1em;
+  background-color: var(--blue);
+  color: var(--white); 
 }
 
 #buyers-guide {
@@ -493,7 +517,7 @@ a[href].direct-link:focus:visited,
   background-position: center;
 }
 
-#glossary h1, #resources h1 {
+#glossary h1, #resources h1, #guides h1 {
   padding: .5em;
   font-size: 5em;
 }
