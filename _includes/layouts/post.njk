@@ -2,8 +2,13 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
+
+<section id="post">
+<div class="row">
 <h1>{{ title }}</h1>
 
 {{ content | safe }}
 
 <p><a href="{{ '/' | url }}">← Home</a></p>
+</div>
+</section>
