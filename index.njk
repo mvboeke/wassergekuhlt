@@ -23,13 +23,24 @@ navtitle: Wassergekühlt - Home of the Porsche 996
 </div>
 </section>
 
-<section>
+<section class="recent-articles">
 <div class="row">
-<h3>Recent Articles</h3>
+	<h3>Recent Articles</h3>
 
-{% set postslist = collections.posts | head(-3) %}
-{% include "postslist.njk" %}
+	{% set postslist = collections.posts | head(-3) %}
+	{% include "postslist.njk" %}
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+	<p>Read more posts in <a href="{{ '/articles/' | url }}">Articles</a></p>
+</div>
+</section>
+
+<section class="featured-guide">
+<div class="row">
+<div id="model-guide" class="guide-box">
+	<div class="ribbon ribbon-top-right"><span>Coming Soon</span></div>
+	<h3 class="dark">Model Guide</h3>
+	<div class="description">Mk1 vs Mk2. Carrera vs 4S. Cabriolet vs Targa. Learn about all the different variations of the Porsche 996.</div>
+</div>
+<p>See more topics in <a href="{{ '/guides/' | url }}">Guides</a></p>
 </div>
 </section>

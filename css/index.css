@@ -95,6 +95,13 @@ header:after {
 header a[href], header a[href]:visited {
   color: var(--darkgray)
 }
+footer {
+  padding: 1em;
+  margin-top: 1em;
+  background-color: var(--gray);
+  color: var(--white);
+
+}
 table {
   margin: 1em 0;
 }
@@ -199,7 +206,7 @@ pre {
   transition: .2s;
   cursor: pointer;
   overflow: hidden;
-  max-height: 180px;
+  max-height: 157px;
 }
 
 .cover-photo img {
