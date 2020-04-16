@@ -100,7 +100,7 @@ footer {
   margin-top: 1em;
   background-color: var(--gray);
   color: var(--white);
-
+  text-align: center;
 }
 table {
   margin: 1em 0;
@@ -193,6 +193,17 @@ pre {
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.footer-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-nav .nav-item {
+  display: inline-block;
+  margin-right: 1em;
 }
 
 /* Posts list */
@@ -346,6 +357,48 @@ a[href].direct-link:focus:visited,
   left: -25px;
   top: 30px;
   transform: rotate(45deg);
+}
+
+/* Contact page styles */
+form {
+  border: 1px solid var(--gray);
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 768px;
+}
+
+label {
+  font-family: 'd-din-bold', sans-serif;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--blue);
+  line-height: 1.4em;
+  padding:.5em;
+  font-family: 'd-din', sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  height: 5em;
+}
+
+button {
+  padding: .25em 1em;
+  background-color: var(--red);
+  color: white;
+  font-family: 'd-din-bold', sans-serif;
+  font-size: 1.25em;
+  border-radius: 4px;
+  border: 1px solid var(--darkred);
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background-color: var(--darkred);
 }
 
 /* Home page styles */
