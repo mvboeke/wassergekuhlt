@@ -526,6 +526,99 @@ button:hover {
   background-image: url(/img/speed_yellow_at_speed.jpg);
 }
 
+#wheel-guide {
+  background-image: url(/img/porsche-996-mk2-mountains-side-view.jpg);
+}
+
+.section-header {
+  background-color: lightgray;
+  padding: 3px 8px;
+  clear: both;
+}
+
+#guides table {
+  border-collapse: collapse;
+  margin: 0 0 20px 10px;
+}
+
+#guides td, #guides th {
+  padding: 5px;
+}
+
+#guides table thead tr th {
+  border-bottom: 1px solid red;
+  font-family: 'd-din-bold', sans-serif;
+  background-color: lightgray;
+}
+
+#guides table tr td {
+  border-bottom: 1px solid lightgray;
+}
+
+.wheel-details h3 {
+    margin-bottom: 5px;
+    float:none;
+}
+
+.wheel-details div {
+  margin-bottom: 10px;
+}
+
+.wheel-photo {
+  float: left;
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0px 10px 0 0;
+}
+
+.wheel-photo a, 
+.wheel-photo a[href]:visited {
+  position: relative;
+  top: 100px;
+  right: -80px;
+  font-size: .75em;
+  color: white;
+  text-align: right;
+}
+
+.wheel-10-spoke {
+  background-image: url(/img/wheels/996-10-spoke.jpg);
+}
+
+.carrera-2 {
+  background-image: url(/img/wheels/carrera-2.jpg);
+}
+
+.carrera-4 {
+  background-image: url(/img/wheels/carrera-4.jpg);
+}
+
+.carrera {
+  background-image: url(/img/wheels/carrera.jpg);
+}
+
+.turbo {
+  background-image: url(/img/wheels/turbo.jpg);
+}
+
+.turbo-2 {
+  background-image: url(/img/wheels/turbo-2.jpg);
+}
+
+.sport-techno {
+  background-image: url(/img/wheels/sport-techno.jpg);
+}
+
+.sport-design {
+  background-image: url(/img/wheels/sport-design.jpg);
+}
+
+.gt3 {
+  background-image: url(/img/wheels/gt3.jpg);
+}
+
 /*Resources page styles*/
 #resources {
   background-image: url(/img/silver_C4S_on_brick.jpg);
