@@ -206,6 +206,11 @@ pre {
   margin-right: 1em;
 }
 
+.row {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /* Posts list */
 
 .cover-photo {
@@ -538,7 +543,6 @@ button:hover {
 
 #guides table {
   border-collapse: collapse;
-  margin: 0 0 20px 10px;
 }
 
 #guides td, #guides th {
@@ -555,6 +559,11 @@ button:hover {
   border-bottom: 1px solid lightgray;
 }
 
+.narrow-guide {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 .wheel-details h3 {
     margin-bottom: 5px;
     float:none;
@@ -566,8 +575,8 @@ button:hover {
 
 .wheel-photo {
   float: left;
-  width: 120px;
-  height: 120px;
+  width: 320px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
   margin: 0px 10px 0 0;
@@ -576,8 +585,8 @@ button:hover {
 .wheel-photo a, 
 .wheel-photo a[href]:visited {
   position: relative;
-  top: 100px;
-  right: -80px;
+  top: 180px;
+  right: -280px;
   font-size: .75em;
   color: white;
   text-align: right;
@@ -692,6 +701,21 @@ button:hover {
 #glossary h1, #resources h1, #guides h1 {
   padding: .5em;
   font-size: 5em;
+}
+
+#guides table {
+  margin: 0 0 20px 10px;
+}
+
+.wheel-photo {
+  width: 120px;
+  height: 120px;
+}
+
+.wheel-photo a, 
+.wheel-photo a[href]:visited {
+  top: 100px;
+  right: -80px;
 }
 
 }
