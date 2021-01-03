@@ -493,6 +493,7 @@ button:hover {
   box-shadow: 0 0 15px rgba(0,0,0,.1);
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 }
 
 .guide-box h3 {
@@ -626,6 +627,11 @@ button:hover {
 
 .gt3 {
   background-image: url(/img/wheels/gt3.jpg);
+}
+
+.spreadsheet-embed {
+  width: 100%;
+  height: 400px;
 }
 
 /*Resources page styles*/
